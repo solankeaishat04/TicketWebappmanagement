@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === General Reset & Body Styles === */
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  background-color: #f9fafb;
+  color: #111827;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+/* === Hero Section === */
+.hero {
+  @apply relative overflow-hidden bg-blue-600 text-white;
+}
+
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* === Navbar === */
+.navbar {
+  @apply flex items-center justify-between py-6;
+}
+
+/* === Buttons === */
+.btn {
+  @apply px-5 py-2.5 rounded-lg font-medium transition duration-300;
+}
+
+.btn-primary {
+  @apply bg-white text-blue-600 hover:bg-blue-100;
+}
+
+.btn-outline {
+  @apply border border-white text-white hover:bg-white hover:text-blue-600;
+}
+
+/* === Section Utilities === */
+.section {
+  @apply py-20;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-center mb-8;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 text-center mb-12;
+}
+
+/* === Stats Section (below Hero) === */
+.stats {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center mt-16;
+}
+
+.stat-card {
+  @apply bg-white rounded-2xl shadow-md py-8 px-4 hover:shadow-lg transition;
+}
+
+.stat-value {
+  @apply text-3xl font-bold text-blue-600;
+}
+
+.stat-label {
+  @apply text-gray-600 mt-2;
+}

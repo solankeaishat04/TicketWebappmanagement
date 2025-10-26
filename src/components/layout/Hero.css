@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.font-hero {
+  font-family: 'Poppins', sans-serif;
+}
+
+.decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  backdrop-filter: blur(50%);
+}
+
+/* Circle 1 - Large, light green, top-left, bold */
+.circle-1 {
+  top: -90px;
+  left: -60px;
+  width: 250px;
+  height: 250px;
+  border: 8px solid rgba(181, 110, 23, 0.5);
+}
+
+/* Circle 2 - Medium, medium green, top-right, subtle */
+.circle-2 {
+  top: 40px;
+  right: -40px;
+  width: 150px;
+  height: 150px;
+  border: 5px solid rgba(210, 18, 181, 0.3);
+}
+
+/* Circle 3 - Small, dark green, bottom-left, bold */
+.circle-3 {
+  bottom: 90px;
+  left: 60px;
+  width: 120px;
+  height: 120px;
+  border: 7px solid rgba(9, 126, 199, 0.6);
+}
+
+/* Circle 4 - Medium, lime green, bottom-right, subtle */
+.circle-4 {
+  bottom: 20px;
+  right: 80px;
+  width: 140px;
+  height: 140px;
+  border: 4px solid rgba(182, 22, 144, 0.4);
+}
+
+/* Circle 5 - Small, green-teal, top-center, subtle */
+.circle-5 {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border: 4px solid rgba(83, 12, 182, 0.35);
+}
+
+/* Circle 6 - Medium, bold green, center-right */
+.circle-6 {
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  width: 180px;
+  height: 180px;
+  border: 8px solid rgba(10, 160, 65, 0.5);
+}
