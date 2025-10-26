@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { StatCard } from "../components/cards/StatCard";
 import { ticketService } from "../services/useTicketService";
+import Footer from "../components/layout/Footer";
 
 interface DashboardStats {
   total: number;
@@ -40,7 +41,7 @@ const Dashboard: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex overflow-hidden max-w-[1440px] mx-auto">
+    <div className="overflow-hidden max-w-[1440px] mx-auto">
       <main className="flex-1 p-6 max-w-[1440px] mx-auto overflow-y-auto">
         {toast && (
           <div className="mb-4 p-2 bg-red-200 text-red-800 rounded">
@@ -86,6 +87,7 @@ const Dashboard: React.FC = () => {
           </div>
         </section>
       </main>
+      <Footer/>
     </div>
   );
 };

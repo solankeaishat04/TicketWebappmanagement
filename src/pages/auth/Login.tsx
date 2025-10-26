@@ -4,6 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { mockAuthAPI } from "../../services/useMockAuth";
 import Logo from "../../components/Logo";
+import Footer from "../../components/layout/Footer";
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -40,7 +41,7 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4 relative">
+    <div className="min-h-screen  max-w-[1440px]   items-center justify-center bg-gray-50 p-4 relative">
       {toast && (
         <div
           className={`fixed top-5 right-5 px-14 py-5 rounded shadow text-white font-medium text-1xl ${
@@ -51,7 +52,7 @@ const Login: React.FC = () => {
         </div>
       )}
 
-      <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-md relative">
+      <div className="w-full max-w-md bg-white p-8 mx-auto rounded-xl shadow-md relative">
         
         <button
           onClick={() => navigate("/")}
@@ -106,6 +107,7 @@ const Login: React.FC = () => {
           </Link>
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

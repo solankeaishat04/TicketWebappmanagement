@@ -3,6 +3,7 @@ import { type Ticket, ticketService } from "../services/useTicketService";
 import { TicketCard } from "../components/layout/TicketCard";
 import { TicketForm } from "../components/layout/TicketForm";
 import { useToast } from "../hooks/useToast";
+import Footer from "../components/layout/Footer";
 
 export const TicketManagement: React.FC = () => {
   const { showToast, ToastComponent } = useToast();
@@ -61,7 +62,7 @@ export const TicketManagement: React.FC = () => {
   };
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className=" max-w-[1440px]  min-h-screen bg-gray-50">
       <main className="flex-1 p-4 md:p-6">
         <ToastComponent />
 
@@ -130,6 +131,7 @@ export const TicketManagement: React.FC = () => {
           </div>
         )}
       </main>
+      <Footer/>
     </div>
   );
 };

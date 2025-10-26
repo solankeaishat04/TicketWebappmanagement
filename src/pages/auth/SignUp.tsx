@@ -4,6 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { mockAuthAPI } from "../../services/useMockAuth";
 import Logo from "../../components/Logo";
+import Footer from "../../components/layout/Footer";
 
 const SignUp: React.FC = () => {
   const [fullName, setFullName] = useState("");
@@ -41,14 +42,14 @@ const SignUp: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4 relative">
+    <div className="min-h-screen max-w-[1440px]  items-center justify-center bg-gray-50 p-4 relative">
       {toast && (
         <div className="fixed top-5 right-5 bg-red-500 text-white px-4 py-2 rounded shadow">
           {toast}
         </div>
       )}
 
-      <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-md relative">
+      <div className="w-full max-w-md bg-white mx-auto p-8 rounded-xl shadow-md relative">
     
         <button
           onClick={() => navigate("/")}
@@ -135,6 +136,7 @@ const SignUp: React.FC = () => {
           </Link>
         </p>
       </div>
+      <Footer/>
     </div>
   );
 };
