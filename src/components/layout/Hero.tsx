@@ -1,8 +1,10 @@
 import React from "react";
 import { FaArrowRight, FaSignInAlt } from "react-icons/fa";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
+ 
   return (
     <section
       className="hero relative flex flex-col items-center justify-center text-center 
@@ -32,27 +34,28 @@ const Hero: React.FC = () => {
         experience.
       </p>
 
-      {/* Call-To-Action Buttons */}
+     
       <div className="flex flex-col sm:flex-row gap-4 z-10 justify-center">
-        <a
-          href="/login"
+        <Link
+          to= "/login"
           className="px-8 py-3 rounded-lg font-semibold text-white bg-gradient-to-r 
                      from-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-500 
                      transition-all w-48 text-center flex items-center justify-center gap-2"
-        >
+    >
           Login
           <FaSignInAlt />
-        </a>
+        </Link>
 
-        <a
-          href="/signup"
+        <Link
+          to="/signup"
           className="px-8 py-3 rounded-lg font-semibold text-green-600 border-2 border-green-500 
                      hover:bg-green-50 transition-all w-48 text-center flex items-center justify-center gap-2"
         >
           Get Started
           <FaArrowRight />
-        </a>
+        </Link>
       </div>
+   
 
       {/* Wave SVG */}
       <img
