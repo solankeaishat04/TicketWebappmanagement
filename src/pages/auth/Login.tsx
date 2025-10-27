@@ -41,7 +41,7 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen  max-w-[1440px]   items-center justify-center bg-gray-50 p-4 relative">
+    <div className="flex flex-col min-h-screen max-w-[1440px] items-center justify-center mx-auto bg-gray-50 p-4 relative">
       {toast && (
         <div
           className={`fixed top-5 right-5 px-14 py-5 rounded shadow text-white font-medium text-1xl ${

@@ -41,8 +41,8 @@ const Dashboard: React.FC = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden max-w-[1440px] mx-auto">
-      <main className="flex-1 p-6 max-w-[1440px] mx-auto overflow-y-auto">
+    <div className="flex flex-col min-h-screen max-w-[1440px] mx-auto bg-gray-50">
+      <main className="flex-1 p-6 overflow-y-auto">
         {toast && (
           <div className="mb-4 p-2 bg-red-200 text-red-800 rounded">
             {toast}
